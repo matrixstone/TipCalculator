@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TipViewController">
             <connections>
                 <outlet property="billTextField" destination="Ugy-kk-TgU" id="Ps1-qK-i8V"/>
-                <outlet property="tipControl" destination="Dol-bO-qoH" id="X3e-5K-WWu"/>
+                <outlet property="tipControl" destination="Dol-bO-qoH" id="LmB-qO-ZzD"/>
                 <outlet property="tipLabel" destination="YiC-G8-Nl8" id="ly6-tg-6fR"/>
                 <outlet property="totalLabel" destination="2w2-LY-EDK" id="XEg-bC-JSk"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -51,7 +51,7 @@
                     <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                 </view>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pw-th-oTo">
-                    <rect key="frame" x="20" y="194" width="42" height="21"/>
+                    <rect key="frame" x="20" y="194" width="99" height="26"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
