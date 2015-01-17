@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TipViewController">
             <connections>
                 <outlet property="billTextField" destination="Ugy-kk-TgU" id="Ps1-qK-i8V"/>
+                <outlet property="mainViewer" destination="1" id="iU7-bl-2eI"/>
                 <outlet property="tipControl" destination="Dol-bO-qoH" id="LmB-qO-ZzD"/>
                 <outlet property="tipLabel" destination="YiC-G8-Nl8" id="ly6-tg-6fR"/>
                 <outlet property="totalLabel" destination="2w2-LY-EDK" id="XEg-bC-JSk"/>

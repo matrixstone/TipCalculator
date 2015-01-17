@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
+@property (strong, nonatomic) IBOutlet UIView *mainViewer;
 
 - (IBAction)onTap:(id)sender;
 -(void)updateValues;
@@ -34,6 +35,7 @@
         [defaults setInteger:10 forKey:@"1st"];
         [defaults setInteger:15 forKey:@"2nd"];
         [defaults setInteger:20 forKey:@"3rd"];
+        [defaults setInteger:0 forKey:@"themeIndex"];
     }
     return self;
 }
@@ -57,9 +59,15 @@
     int firstPercentage=[defaults integerForKey:@"1st"];
     int secondPercentage=[defaults integerForKey:@"2nd"];
     int thridPercentage=[defaults integerForKey:@"3rd"];
+    int themIndex=[defaults integerForKey:@"themeIndex"];
     [self.tipControl setTitle: [NSString stringWithFormat:@"%d", firstPercentage] forSegmentAtIndex:0];
     [self.tipControl setTitle: [NSString stringWithFormat:@"%d", secondPercentage] forSegmentAtIndex:1];
     [self.tipControl setTitle: [NSString stringWithFormat:@"%d", thridPercentage] forSegmentAtIndex:2];
+    if (themIndex == 0) {
+        self.mainViewer.backgroundColor=[UIColor whiteColor];
+    }else{
+        self.mainViewer.backgroundColor=[UIColor greenColor];
+    }
 }
 
 - (IBAction)onTap:(id)sender {

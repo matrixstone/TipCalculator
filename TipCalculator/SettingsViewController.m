@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *thirdField;
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 - (IBAction)onTap:(id)sender;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *themeSelector;
 
 @end
 
@@ -43,6 +44,7 @@
     int firstPercentage=[self.firstFiled.text integerValue];
     int secondPercentage=[self.secondField.text integerValue];
     int thirdPercentage=[self.thirdField.text integerValue];
+    int themeIndex=self.themeSelector.selectedSegmentIndex;
 //    NSLog(@"%d", secondPercentage);
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if (firstPercentage!=0) {
@@ -54,7 +56,7 @@
     if (thirdPercentage!=0) {
         [defaults setInteger:thirdPercentage forKey:@"3rd"];
     }
-    
+    [defaults setInteger:themeIndex forKey:@"themeIndex"];
     
 }
 
