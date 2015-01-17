@@ -2,8 +2,10 @@
 
 This is a IOS application used to calculate the tips.
 
-Time spent: 3 hours
+Time spent: 4 hours.
 
 Completed functions:
 
- * [x] Required: basic tip calculation 
+ * [x] Required: basic tip calculation.
+ 
+ * [x] Optional: set percentages by user.
